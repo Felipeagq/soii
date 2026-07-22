@@ -17,6 +17,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
   title: {
     default: `${site.name} | ${site.tagline}`,
     template: `%s | ${site.name}`,
@@ -33,14 +34,41 @@ export const metadata: Metadata = {
     "Colombia",
   ],
   authors: [{ name: site.fullName }],
+  creator: site.fullName,
+  publisher: site.fullName,
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: `${site.name} | ${site.tagline}`,
+    title: site.fullName,
     description: site.description,
+    url: "/",
+    siteName: site.name,
     type: "website",
     locale: "es_CO",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: site.fullName,
+        type: "image/png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: site.fullName,
+    description: site.description,
+    images: ["/og-image.png"],
   },
   icons: {
     icon: "/favicon.svg",
+    apple: "/apple-touch-icon.png",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

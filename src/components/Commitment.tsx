@@ -36,9 +36,9 @@ export function Commitment() {
           ].map((c) => (
             <div
               key={c.title}
-              className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur"
+              className="rounded-lg border border-white/10 bg-white/5 p-5 backdrop-blur"
             >
-              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-amber-gradient text-navy-900">
+              <span className="flex h-11 w-11 items-center justify-center rounded-md bg-amber-gradient text-navy-900">
                 <Icon name={c.icon} className="h-6 w-6" />
               </span>
               <p className="mt-4 font-display font-bold text-white">{c.title}</p>

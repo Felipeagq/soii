@@ -14,7 +14,7 @@ export function About() {
     <section id="nosotros" className="relative bg-white py-20 lg:py-28">
       <div className="container-x grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <Reveal className="relative order-2 lg:order-1">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-card">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-xl shadow-card">
             <Image
               src="/images/gallery-3.jpeg"
               alt="Equipo SOII trabajando en reforzamiento estructural"
@@ -23,7 +23,7 @@ export function About() {
               className="object-cover"
             />
           </div>
-          <div className="absolute -bottom-6 right-4 grid grid-cols-2 gap-3 rounded-2xl bg-navy-900 p-5 text-white shadow-card sm:right-8">
+          <div className="absolute -bottom-6 right-4 grid grid-cols-2 gap-3 rounded-lg bg-navy-900 p-5 text-white shadow-card sm:right-8">
             <div>
               <p className="font-display text-2xl font-extrabold text-amber-400">+1</p>
               <p className="text-[0.7rem] uppercase tracking-wide text-white/60">

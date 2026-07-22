@@ -25,7 +25,7 @@ export function Gallery() {
             <Reveal
               key={img.src}
               delay={(i % 4) * 80}
-              className={`group relative overflow-hidden rounded-2xl shadow-card ${
+              className={`group relative overflow-hidden rounded-lg shadow-card ${
                 i === 0 ? "col-span-2 row-span-2" : ""
               }`}
             >

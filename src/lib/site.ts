@@ -4,6 +4,8 @@ export const site = {
   tagline: "Soluciones Industriales e Integrales",
   description:
     "Especialistas en mantenimientos locativos: aseguramos la funcionalidad, seguridad y estética de tus instalaciones con calidad, eficiencia e innovación.",
+  /** URL pública del sitio (usada en Open Graph / compartir). Actualizar al desplegar. */
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://soii.com.co",
   contact: {
     name: "Alfredo Otero Romero",
     role: "Gerencia",

@@ -20,7 +20,7 @@ export function Clients() {
             {clientes.map((c) => (
               <li
                 key={c}
-                className="flex items-center justify-center rounded-2xl border border-navy-100 bg-navy-50 px-6 py-7 text-center transition-all duration-300 hover:border-amber-200 hover:bg-white hover:shadow-card"
+                className="flex items-center justify-center rounded-lg border border-navy-100 bg-navy-50 px-6 py-7 text-center transition-all duration-300 hover:border-amber-200 hover:bg-white hover:shadow-card"
               >
                 <span className="font-display text-lg font-bold tracking-tight text-navy-700">
                   {c}

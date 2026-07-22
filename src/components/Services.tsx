@@ -24,7 +24,7 @@ export function Services() {
           {servicios.map((s, i) => (
             <Reveal key={s.title} delay={(i % 4) * 90}>
               <article className="card group h-full hover:-translate-y-1.5 hover:border-amber-200 hover:shadow-card-hover">
-                <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-navy-50 text-navy-800 transition-colors duration-300 group-hover:bg-amber-gradient group-hover:text-navy-900">
+                <span className="flex h-14 w-14 items-center justify-center rounded-lg bg-navy-50 text-navy-800 transition-colors duration-300 group-hover:bg-amber-gradient group-hover:text-navy-900">
                   <Icon name={s.icon} className="h-7 w-7" />
                 </span>
                 <h3 className="mt-5 font-display text-lg font-bold text-navy-900">

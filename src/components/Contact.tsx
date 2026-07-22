@@ -67,7 +67,7 @@ export function Contact() {
               la medida. Escríbenos y recibe una cotización sin compromiso.
             </p>
 
-            <div className="mt-8 rounded-2xl border border-navy-100 bg-navy-50 p-6">
+            <div className="mt-8 rounded-lg border border-navy-100 bg-navy-50 p-6">
               <p className="text-xs font-bold uppercase tracking-wide text-amber-600">
                 {site.contact.role}
               </p>
@@ -79,8 +79,8 @@ export function Contact() {
             <ul className="mt-6 space-y-3">
               {contactItems.map((item) => {
                 const content = (
-                  <div className="flex items-center gap-4 rounded-2xl border border-navy-100 bg-white p-4 transition-all duration-300 hover:border-amber-200 hover:shadow-card">
-                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-amber-gradient text-navy-900">
+                  <div className="flex items-center gap-4 rounded-lg border border-navy-100 bg-white p-4 transition-all duration-300 hover:border-amber-200 hover:shadow-card">
+                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-amber-gradient text-navy-900">
                       <Icon name={item.icon} className="h-5 w-5" />
                     </span>
                     <div>
@@ -107,7 +107,7 @@ export function Contact() {
           </div>
 
           {/* Formulario */}
-          <div className="relative overflow-hidden rounded-[2rem] bg-navy-gradient p-7 shadow-card sm:p-10">
+          <div className="relative overflow-hidden rounded-xl bg-navy-gradient p-7 shadow-card sm:p-10">
             <GearMark className="absolute -right-10 -top-10 h-44 w-44 opacity-10" />
             <h3 className="relative font-display text-2xl font-bold text-white">
               Solicita tu cotización
@@ -144,7 +144,7 @@ export function Contact() {
                   id="servicio"
                   value={form.servicio}
                   onChange={(e) => setForm({ ...form, servicio: e.target.value })}
-                  className="w-full rounded-xl border border-white/15 bg-white/10 px-4 py-3 text-white outline-none transition focus:border-amber-400 focus:ring-2 focus:ring-amber-400/40 [&>option]:text-navy-900"
+                  className="w-full rounded-md border border-white/15 bg-white/10 px-4 py-3 text-white outline-none transition focus:border-amber-400 focus:ring-2 focus:ring-amber-400/40 [&>option]:text-navy-900"
                 >
                   <option value="">Selecciona una opción</option>
                   <option>Mantenimiento preventivo</option>
@@ -168,7 +168,7 @@ export function Contact() {
                   value={form.mensaje}
                   onChange={(e) => setForm({ ...form, mensaje: e.target.value })}
                   placeholder="Cuéntanos qué necesitas"
-                  className="w-full resize-none rounded-xl border border-white/15 bg-white/10 px-4 py-3 text-white placeholder:text-white/40 outline-none transition focus:border-amber-400 focus:ring-2 focus:ring-amber-400/40"
+                  className="w-full resize-none rounded-md border border-white/15 bg-white/10 px-4 py-3 text-white placeholder:text-white/40 outline-none transition focus:border-amber-400 focus:ring-2 focus:ring-amber-400/40"
                 />
               </div>
               <button type="submit" className="btn-primary w-full">
@@ -212,7 +212,7 @@ function Field({
         required={required}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
-        className="w-full rounded-xl border border-white/15 bg-white/10 px-4 py-3 text-white placeholder:text-white/40 outline-none transition focus:border-amber-400 focus:ring-2 focus:ring-amber-400/40"
+        className="w-full rounded-md border border-white/15 bg-white/10 px-4 py-3 text-white placeholder:text-white/40 outline-none transition focus:border-amber-400 focus:ring-2 focus:ring-amber-400/40"
       />
     </div>
   );

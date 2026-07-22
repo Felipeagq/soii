@@ -10,10 +10,10 @@ export function Hero() {
       {/* Engranaje decorativo */}
       <GearMark className="absolute -right-16 top-24 h-72 w-72 opacity-10 animate-spin-slow" />
 
-      <div className="container-x relative grid items-center gap-12 pb-20 pt-28 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8 lg:pb-28 lg:pt-36">
-        <div className="animate-fade-up">
-          <span className="inline-flex items-center gap-2 rounded-full border border-amber-500/30 bg-amber-500/10 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-amber-400">
-            <span className="h-1.5 w-1.5 rounded-full bg-amber-400" />
+      <div className="container-x relative grid grid-cols-1 items-center gap-12 pb-20 pt-28 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8 lg:pb-28 lg:pt-36">
+        <div className="min-w-0 animate-fade-up">
+          <span className="inline-flex max-w-full flex-wrap items-center gap-2 rounded-full border border-amber-500/30 bg-amber-500/10 px-4 py-1.5 text-[0.62rem] font-bold uppercase tracking-[0.16em] text-amber-400 sm:text-xs sm:tracking-[0.2em]">
+            <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-amber-400" />
             {site.tagline}
           </span>
 
@@ -55,8 +55,8 @@ export function Hero() {
         </div>
 
         {/* Imagen con recorte diagonal */}
-        <div className="relative animate-fade-up [animation-delay:150ms]">
-          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] border-4 border-white/10 shadow-2xl sm:aspect-[4/4.2]">
+        <div className="relative min-w-0 animate-fade-up [animation-delay:150ms]">
+          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-xl border-4 border-white/10 shadow-2xl sm:aspect-[4/4.2]">
             <video
               src="/videos/hero-loop.mp4"
               poster="/videos/poster-3.jpg"
@@ -72,8 +72,8 @@ export function Hero() {
           </div>
 
           {/* Tarjeta flotante */}
-          <div className="absolute -bottom-6 -left-4 flex items-center gap-3 rounded-2xl bg-white p-4 shadow-card sm:-left-8">
-            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-amber-gradient text-navy-900">
+          <div className="absolute -bottom-6 -left-4 flex items-center gap-3 rounded-lg bg-white p-4 shadow-card sm:-left-8">
+            <span className="flex h-11 w-11 items-center justify-center rounded-md bg-amber-gradient text-navy-900">
               <Icon name="shield" className="h-6 w-6" />
             </span>
             <div>
@@ -84,7 +84,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="absolute -right-3 top-6 rotate-3 rounded-xl bg-amber-gradient px-4 py-2 shadow-lg sm:-right-6">
+          <div className="absolute -right-3 top-6 rotate-3 rounded-md bg-amber-gradient px-4 py-2 shadow-lg sm:-right-6">
             <p className="font-display text-xs font-extrabold uppercase tracking-wide text-navy-900">
               +1 año de trayectoria
             </p>

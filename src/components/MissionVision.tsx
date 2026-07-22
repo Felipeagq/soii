@@ -16,7 +16,7 @@ export function MissionVision() {
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
           <Reveal>
             <article className="card group h-full hover:-translate-y-1 hover:shadow-card-hover">
-              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-gradient text-navy-900">
+              <span className="flex h-12 w-12 items-center justify-center rounded-md bg-amber-gradient text-navy-900">
                 <Icon name="bolt" className="h-6 w-6" />
               </span>
               <h3 className="mt-5 font-display text-2xl font-bold text-navy-900">
@@ -33,9 +33,9 @@ export function MissionVision() {
           </Reveal>
 
           <Reveal delay={120}>
-            <article className="relative h-full overflow-hidden rounded-2xl bg-navy-gradient p-7 text-white shadow-card">
+            <article className="relative h-full overflow-hidden rounded-lg bg-navy-gradient p-7 text-white shadow-card">
               <GearMark className="absolute -right-8 -top-8 h-40 w-40 opacity-10" />
-              <span className="relative flex h-12 w-12 items-center justify-center rounded-xl bg-white/10 text-amber-400">
+              <span className="relative flex h-12 w-12 items-center justify-center rounded-md bg-white/10 text-amber-400">
                 <Icon name="spark" className="h-6 w-6" />
               </span>
               <h3 className="relative mt-5 font-display text-2xl font-bold">
