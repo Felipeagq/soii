@@ -5,7 +5,7 @@ especializada en mantenimientos locativos, obras civiles, adecuaciones e instala
 técnicas.
 
 Construido con **Next.js 15 (App Router) + TypeScript + Tailwind CSS**, listo para
-desplegar como sitio estático en **AWS Amplify Hosting**.
+desplegar en **AWS Amplify Hosting** (soporte nativo de Next.js).
 
 ## Requisitos
 
@@ -27,8 +27,8 @@ Abre [http://localhost:3000](http://localhost:3000).
 npm run build
 ```
 
-El proyecto usa `output: "export"` (ver `next.config.mjs`), por lo que el sitio
-estático se genera en la carpeta `out/`.
+El build pre-renderiza todas las páginas como contenido estático. Amplify usa
+`.next/required-server-files.json` para publicar el sitio.
 
 ## Estructura
 
@@ -59,8 +59,8 @@ Para editar textos, servicios, valores, clientes o datos de contacto, modifica
 1. Sube el repositorio a GitHub/GitLab/Bitbucket/CodeCommit.
 2. En la consola de **AWS Amplify** → *New app* → *Host web app* → conecta el repo.
 3. Amplify detectará `amplify.yml`. La configuración ya está lista:
-   - `baseDirectory: out` (salida del export estático de Next.js).
-4. Guarda y despliega. Amplify hará `npm ci` → `npm run build` y publicará `out/`.
+   - `baseDirectory: .next` (salida del build de Next.js para Amplify).
+4. Guarda y despliega. Amplify hará `npm ci` → `npm run build` y publicará el sitio.
 
 El formulario de contacto y el botón flotante abren **WhatsApp** con un mensaje
 prellenado hacia el número de la empresa, por lo que no requiere backend.

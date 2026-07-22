@@ -42,7 +42,7 @@ export function VideoShowcase() {
           </p>
         </Reveal>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
           {videos.map((v, i) => (
             <Reveal key={v.src} delay={i * 100}>
               <div className="group relative mx-auto aspect-[9/16] w-full max-w-[320px] overflow-hidden rounded-xl border border-white/10 shadow-2xl">

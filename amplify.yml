@@ -8,8 +8,7 @@ frontend:
       commands:
         - npm run build
   artifacts:
-    # Next.js con output: "export" genera el sitio estático en la carpeta "out".
-    baseDirectory: out
+    baseDirectory: .next
     files:
       - "**/*"
   cache:

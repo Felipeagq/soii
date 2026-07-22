@@ -167,6 +167,12 @@ export const videos = [
     title: "Mobiliario a la medida",
     tag: "Adecuaciones",
   },
+  {
+    src: "/videos/video-4.mp4",
+    poster: "/videos/poster-4.jpg",
+    title: "Instalaciones industriales",
+    tag: "Señalización y montaje",
+  },
 ];
 
 export const stats = [
