@@ -1,6 +1,7 @@
 import { Icon } from "./Icon";
 import { GearMark } from "./GearMark";
-import { site, stats } from "@/lib/site";
+import { HeroCarousel } from "./HeroCarousel";
+import { heroSlides, site, stats } from "@/lib/site";
 
 export function Hero() {
   return (
@@ -54,25 +55,10 @@ export function Hero() {
           </ul>
         </div>
 
-        {/* Imagen con recorte diagonal */}
         <div className="relative min-w-0 animate-fade-up [animation-delay:150ms]">
-          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-xl border-4 border-white/10 shadow-2xl sm:aspect-[4/4.2]">
-            <video
-              src="/videos/hero-loop.mp4"
-              poster="/videos/poster-3.jpg"
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="metadata"
-              aria-label="SOII realizando mantenimiento de fachadas"
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy-950/70 via-transparent to-transparent" />
-          </div>
+          <HeroCarousel slides={heroSlides} />
 
-          {/* Tarjeta flotante */}
-          <div className="absolute -bottom-6 -left-4 flex items-center gap-3 rounded-lg bg-white p-4 shadow-card sm:-left-8">
+          <div className="absolute -bottom-6 -left-4 z-10 flex items-center gap-3 rounded-lg bg-white p-4 shadow-card sm:-left-8">
             <span className="flex h-11 w-11 items-center justify-center rounded-md bg-amber-gradient text-navy-900">
               <Icon name="shield" className="h-6 w-6" />
             </span>
@@ -84,7 +70,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="absolute -right-3 top-6 rotate-3 rounded-md bg-amber-gradient px-4 py-2 shadow-lg sm:-right-6">
+          <div className="absolute -right-3 top-6 z-10 rotate-3 rounded-md bg-amber-gradient px-4 py-2 shadow-lg sm:-right-6">
             <p className="font-display text-xs font-extrabold uppercase tracking-wide text-navy-900">
               +1 año de trayectoria
             </p>

@@ -1,6 +1,7 @@
+import Image from "next/image";
 import { Icon } from "./Icon";
 import { Reveal } from "./Reveal";
-import { servicios } from "@/lib/site";
+import { servicios, serviciosImagen } from "@/lib/site";
 
 export function Services() {
   return (
@@ -20,7 +21,23 @@ export function Services() {
           </p>
         </Reveal>
 
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <Reveal className="mt-10">
+          <div className="relative mx-auto aspect-[21/9] max-w-4xl overflow-hidden rounded-lg shadow-card sm:aspect-[16/6]">
+            <Image
+              src={serviciosImagen.src}
+              alt={serviciosImagen.alt}
+              fill
+              sizes="(max-width: 1024px) 100vw, 896px"
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-navy-950/60 via-navy-950/20 to-transparent" />
+            <p className="absolute bottom-0 left-0 max-w-md p-5 text-sm font-medium text-white sm:text-base">
+              {serviciosImagen.alt}
+            </p>
+          </div>
+        </Reveal>
+
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {servicios.map((s, i) => (
             <Reveal key={s.title} delay={(i % 4) * 90}>
               <article className="card group h-full hover:-translate-y-1.5 hover:border-amber-200 hover:shadow-card-hover">

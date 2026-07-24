@@ -16,8 +16,8 @@ export function About() {
         <Reveal className="relative order-2 lg:order-1">
           <div className="relative aspect-[4/3] overflow-hidden rounded-xl shadow-card">
             <Image
-              src="/images/gallery-3.jpeg"
-              alt="Equipo SOII trabajando en reforzamiento estructural"
+              src="/images/gallery-17.jpeg"
+              alt="Equipo SOII en entrega de proyecto de adecuación"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"

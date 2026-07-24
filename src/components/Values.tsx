@@ -1,6 +1,7 @@
+import Image from "next/image";
 import { Icon } from "./Icon";
 import { Reveal } from "./Reveal";
-import { valores } from "@/lib/site";
+import { valores, valoresImagenes } from "@/lib/site";
 
 export function Values() {
   return (
@@ -15,7 +16,27 @@ export function Values() {
           </h2>
         </Reveal>
 
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2">
+          {valoresImagenes.map((img, i) => (
+            <Reveal key={img.src} delay={i * 80}>
+              <div className="relative aspect-[16/10] overflow-hidden rounded-lg shadow-card">
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, 50vw"
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-950/50 to-transparent" />
+                <p className="absolute inset-x-0 bottom-0 p-4 text-sm font-medium text-white">
+                  {img.alt}
+                </p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {valores.map((v, i) => (
             <Reveal key={v.title} delay={(i % 3) * 90}>
               <article className="group relative h-full overflow-hidden rounded-lg border border-navy-100 bg-white p-7 shadow-card transition-all duration-300 hover:-translate-y-1.5 hover:shadow-card-hover">
