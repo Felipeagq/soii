@@ -65,7 +65,7 @@ export function Footer() {
             © {new Date().getFullYear()} {site.fullName}. Todos los derechos
             reservados.
           </p>
-          <p>Soluciones que aseguran funcionalidad, seguridad y estética.</p>
+          <p>Servicios certificados en mantenimiento locativo · Colombia</p>
         </div>
       </div>
     </footer>

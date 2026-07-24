@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/site";
+import { StructuredData } from "@/components/StructuredData";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -81,7 +82,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="es" className={`${inter.variable} ${poppins.variable}`}>
-      <body>{children}</body>
+      <body>
+        <StructuredData />
+        {children}
+      </body>
     </html>
   );
 }

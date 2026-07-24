@@ -19,6 +19,7 @@ export const site = {
 export const nav = [
   { label: "Nosotros", href: "#nosotros" },
   { label: "Servicios", href: "#servicios" },
+  { label: "Proceso", href: "#proceso" },
   { label: "Valores", href: "#valores" },
   { label: "Proyectos", href: "#galeria" },
   { label: "Videos", href: "#videos" },
@@ -223,4 +224,49 @@ export const stats = [
   { value: "8+", label: "Clientes que confían" },
   { value: "100%", label: "Compromiso con la calidad" },
   { value: "24/7", label: "Atención y respuesta" },
+];
+
+export const confianza = [
+  { icon: "badge", title: "Personal capacitado", text: "Equipo con experiencia en obra y planta industrial" },
+  { icon: "shield", title: "Seguridad en obra", text: "Protocolos y elementos de protección en cada intervención" },
+  { icon: "star", title: "Calidad garantizada", text: "Materiales certificados y acabados de alto estándar" },
+  { icon: "bolt", title: "Respuesta oportuna", text: "Atención ágil para minimizar tiempos de inactividad" },
+];
+
+export const proceso = [
+  {
+    step: "01",
+    title: "Diagnóstico",
+    description: "Visitamos tus instalaciones, evaluamos el estado y definimos el alcance del proyecto.",
+  },
+  {
+    step: "02",
+    title: "Cotización",
+    description: "Entregamos una propuesta clara con tiempos, materiales y costos sin sorpresas.",
+  },
+  {
+    step: "03",
+    title: "Ejecución",
+    description: "Intervenimos con personal calificado, cumpliendo normas de seguridad y calidad.",
+  },
+  {
+    step: "04",
+    title: "Entrega",
+    description: "Verificamos el resultado contigo y damos seguimiento post-obra si es necesario.",
+  },
+];
+
+export const testimonios = [
+  {
+    quote:
+      "Cumplieron con los tiempos acordados y dejaron las instalaciones en excelentes condiciones. Un equipo serio y comprometido.",
+    author: "Área de operaciones",
+    company: "Cliente industrial",
+  },
+  {
+    quote:
+      "Desde la cotización hasta la entrega, el acompañamiento fue profesional. Recomendamos sus servicios de mantenimiento locativo.",
+    author: "Administración",
+    company: "Centro comercial",
+  },
 ];
