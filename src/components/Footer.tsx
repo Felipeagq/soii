@@ -68,6 +68,20 @@ export function Footer() {
           <p>Servicios certificados en mantenimiento locativo · Colombia</p>
         </div>
       </div>
+
+      <div className="border-t border-white/5 bg-navy-950/80">
+        <div className="container-x py-3 text-center text-xs text-white/40">
+          Powered by{" "}
+          <a
+            href="https://feanware.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-white/60 transition hover:text-amber-400"
+          >
+            feanware
+          </a>
+        </div>
+      </div>
     </footer>
   );
 }
