@@ -5,7 +5,7 @@ export function TrustStrip() {
   return (
     <section className="border-y border-navy-100 bg-white py-8">
       <div className="container-x">
-        <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {confianza.map((item) => (
             <li key={item.title} className="flex items-start gap-4">
               <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md bg-amber-100 text-amber-700">

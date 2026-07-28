@@ -66,7 +66,7 @@ export function VideoShowcase() {
                 type="button"
                 onClick={() => goTo(page - 1)}
                 aria-label="Videos anteriores"
-                className="absolute -left-2 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-md border border-white/20 bg-navy-950/50 text-white backdrop-blur transition hover:bg-navy-950/70 sm:-left-4 lg:-left-12"
+                className="absolute left-1 top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-md border border-white/20 bg-navy-950/50 text-white backdrop-blur transition hover:bg-navy-950/70 sm:left-3 sm:h-10 sm:w-10"
               >
                 <Icon name="arrow" className="h-5 w-5 rotate-180" />
               </button>
@@ -74,20 +74,20 @@ export function VideoShowcase() {
                 type="button"
                 onClick={() => goTo(page + 1)}
                 aria-label="Videos siguientes"
-                className="absolute -right-2 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-md border border-white/20 bg-navy-950/50 text-white backdrop-blur transition hover:bg-navy-950/70 sm:-right-4 lg:-right-12"
+                className="absolute right-1 top-1/2 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-md border border-white/20 bg-navy-950/50 text-white backdrop-blur transition hover:bg-navy-950/70 sm:right-3 sm:h-10 sm:w-10"
               >
                 <Icon name="arrow" className="h-5 w-5" />
               </button>
             </>
           )}
 
-          <div className="grid grid-cols-2 gap-4 sm:gap-6">
+          <div className="grid grid-cols-2 gap-3 sm:gap-6">
             {visible.map((v, localIndex) => {
               const i = start + localIndex;
               return (
                 <div
                   key={v.src}
-                  className="group relative mx-auto aspect-[9/16] w-full max-w-[320px] overflow-hidden rounded-xl border border-white/10 shadow-2xl"
+                  className="group relative aspect-[9/16] w-full overflow-hidden rounded-xl border border-white/10 shadow-2xl"
                 >
                   <video
                     ref={(el) => {

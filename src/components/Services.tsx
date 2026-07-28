@@ -22,7 +22,7 @@ export function Services() {
         </Reveal>
 
         <Reveal className="mt-10">
-          <div className="relative mx-auto aspect-[21/9] max-w-4xl overflow-hidden rounded-lg shadow-card sm:aspect-[16/6]">
+          <div className="relative mx-auto aspect-[4/3] max-w-4xl overflow-hidden rounded-lg shadow-card sm:aspect-[16/7] lg:aspect-[16/6]">
             <Image
               src={serviciosImagen.src}
               alt={serviciosImagen.alt}

@@ -37,7 +37,7 @@ export function GalleryCarousel({ slides, intervalMs = 6000 }: GalleryCarouselPr
 
   return (
     <div className="mx-auto max-w-4xl">
-      <div className="relative aspect-[16/10] overflow-hidden rounded-lg bg-navy-100 shadow-card sm:aspect-[16/9]">
+      <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-navy-100 shadow-card sm:aspect-[16/9]">
         {slides.map((item, i) => (
           <Image
             key={item.src}

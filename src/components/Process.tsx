@@ -17,7 +17,7 @@ export function Process() {
           </p>
         </Reveal>
 
-        <div className="relative mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="relative mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="absolute left-0 right-0 top-8 hidden h-px bg-navy-100 lg:block" aria-hidden="true" />
           {proceso.map((p, i) => (
             <Reveal key={p.step} delay={i * 80}>

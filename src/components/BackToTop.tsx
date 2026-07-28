@@ -19,7 +19,7 @@ export function BackToTop() {
     <a
       href="#inicio"
       aria-label="Volver arriba"
-      className="fixed bottom-24 right-5 z-40 flex h-11 w-11 items-center justify-center rounded-md border border-navy-200 bg-white text-navy-800 shadow-card transition hover:border-amber-300 hover:text-amber-600"
+      className="safe-bottom-high fixed right-5 z-40 flex h-11 w-11 items-center justify-center rounded-md border border-navy-200 bg-white text-navy-800 shadow-card transition hover:border-amber-300 hover:text-amber-600"
     >
       <Icon name="arrow" className="h-5 w-5 -rotate-90" />
     </a>

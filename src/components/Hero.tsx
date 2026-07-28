@@ -55,10 +55,10 @@ export function Hero() {
           </ul>
         </div>
 
-        <div className="relative min-w-0 animate-fade-up [animation-delay:150ms]">
+        <div className="relative min-w-0 animate-fade-up pb-10 [animation-delay:150ms] sm:pb-0">
           <HeroCarousel slides={heroSlides} />
 
-          <div className="absolute -bottom-6 -left-4 z-10 flex items-center gap-3 rounded-lg bg-white p-4 shadow-card sm:-left-8">
+          <div className="absolute -bottom-2 left-0 z-10 flex max-w-[calc(100%-1rem)] items-center gap-3 rounded-lg bg-white p-3 shadow-card sm:-bottom-6 sm:-left-8 sm:max-w-none sm:p-4">
             <span className="flex h-11 w-11 items-center justify-center rounded-md bg-amber-gradient text-navy-900">
               <Icon name="shield" className="h-6 w-6" />
             </span>
@@ -70,8 +70,8 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="absolute -right-3 top-6 z-10 rotate-3 rounded-md bg-amber-gradient px-4 py-2 shadow-lg sm:-right-6">
-            <p className="font-display text-xs font-extrabold uppercase tracking-wide text-navy-900">
+          <div className="absolute right-0 top-4 z-10 rotate-0 rounded-md bg-amber-gradient px-3 py-1.5 shadow-lg sm:-right-6 sm:top-6 sm:rotate-3 sm:px-4 sm:py-2">
+            <p className="font-display text-[0.65rem] font-extrabold uppercase tracking-wide text-navy-900 sm:text-xs">
               +1 año de trayectoria
             </p>
           </div>

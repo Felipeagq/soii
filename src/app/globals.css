@@ -18,6 +18,14 @@
     font-family: var(--font-inter);
   }
 
+  .safe-bottom {
+    bottom: max(1.25rem, env(safe-area-inset-bottom));
+  }
+
+  .safe-bottom-high {
+    bottom: max(6.5rem, calc(env(safe-area-inset-bottom) + 5rem));
+  }
+
   ::selection {
     @apply bg-amber-300 text-navy-900;
   }

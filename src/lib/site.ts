@@ -157,48 +157,25 @@ export const clientes: string[] = [
 ];
 
 export const heroSlides = [
-  { src: "/images/gallery-6.jpeg", alt: "Mantenimiento estructural en parqueadero" },
   { src: "/images/gallery-7.jpeg", alt: "Adecuación de cocina integral" },
+  { src: "/images/gallery-8.jpeg", alt: "Acabados en cocina moderna" },
   { src: "/images/gallery-18.jpeg", alt: "Instalación de malla en zona industrial" },
   { src: "/images/gallery-22.jpeg", alt: "Mantenimiento de tanques industriales" },
   { src: "/images/gallery-17.jpeg", alt: "Entrega de proyecto de adecuación" },
-  { src: "/images/gallery-3.jpeg", alt: "Reparación de losa en parqueadero" },
+  { src: "/images/gallery-20.jpeg", alt: "Mantenimiento en planta industrial" },
 ];
 
 export const galeria = [
-  { src: "/images/gallery-1.jpeg", alt: "Adecuación de espacios en plaza pública" },
-  { src: "/images/gallery-2.jpeg", alt: "Mantenimiento locativo en centro comercial" },
-  { src: "/images/gallery-3.jpeg", alt: "Reparación de losa en parqueadero" },
-  { src: "/images/gallery-4.jpeg", alt: "Obras civiles en zona exterior" },
-  { src: "/images/gallery-5.jpeg", alt: "Trabajo de reforzamiento estructural" },
-  { src: "/images/gallery-6.jpeg", alt: "Mantenimiento estructural en parqueadero" },
   { src: "/images/gallery-7.jpeg", alt: "Adecuación de cocina integral" },
   { src: "/images/gallery-8.jpeg", alt: "Acabados en cocina moderna" },
-  { src: "/images/gallery-9.jpeg", alt: "Instalación de mobiliario a medida" },
-  { src: "/images/gallery-10.jpeg", alt: "Proyecto de adecuación interior" },
-  { src: "/images/gallery-11.jpeg", alt: "Mantenimiento locativo en edificio" },
-  { src: "/images/gallery-12.jpeg", alt: "Trabajo de acabados y pintura" },
-  { src: "/images/gallery-13.jpeg", alt: "Intervención en área común" },
-  { src: "/images/gallery-14.jpeg", alt: "Reparación y conservación de espacios" },
-  { src: "/images/gallery-15.jpeg", alt: "Mantenimiento preventivo en instalaciones" },
-  { src: "/images/gallery-16.jpeg", alt: "Adecuación de espacios comerciales" },
   { src: "/images/gallery-17.jpeg", alt: "Entrega de proyecto de adecuación" },
   { src: "/images/gallery-18.jpeg", alt: "Instalación de malla en zona industrial" },
   { src: "/images/gallery-19.jpeg", alt: "Equipo SOII en operación industrial" },
   { src: "/images/gallery-20.jpeg", alt: "Mantenimiento en planta industrial" },
-  { src: "/images/gallery-21.jpeg", alt: "Trabajos de señalización industrial" },
   { src: "/images/gallery-22.jpeg", alt: "Mantenimiento de tanques industriales" },
-  { src: "/images/gallery-23.jpeg", alt: "Trabajo en alturas en estructura metálica" },
-  { src: "/images/gallery-24.jpeg", alt: "Conservación de instalaciones industriales" },
 ];
 
 export const videos = [
-  {
-    src: "/videos/video-3.mp4",
-    poster: "/videos/poster-3.jpg",
-    title: "Mantenimiento de fachadas",
-    tag: "Trabajo en alturas",
-  },
   {
     src: "/videos/video-1.mp4",
     poster: "/videos/poster-1.jpg",
