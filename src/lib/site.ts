@@ -145,15 +145,21 @@ export const valores: Valor[] = [
   },
 ];
 
-export const clientes: string[] = [
-  "Coningenio S.A.S.",
-  "Cafam",
-  "Isimo",
-  "QC Mall",
-  "BGreen",
-  "Smart Fit",
-  "Famisanar",
-  "Banasan",
+export type Cliente = {
+  name: string;
+  logo: string;
+};
+
+export const clientes: Cliente[] = [
+  { name: "Coningenio S.A.S.", logo: "/images/clients/congenio.png" },
+  { name: "Cafam", logo: "/images/clients/cafam.png" },
+  { name: "Isimo", logo: "/images/clients/isimo.png" },
+  { name: "QC Mall", logo: "/images/clients/ocmall.png" },
+  { name: "BGreen", logo: "/images/clients/bgreen.png" },
+  { name: "Smart Fit", logo: "/images/clients/smartfit.png" },
+  { name: "Famisanar", logo: "/images/clients/famisanar.png" },
+  { name: "Banasan", logo: "/images/clients/banasan.png" },
+  { name: "Homecenter", logo: "/images/clients/homecenter.png" },
 ];
 
 export const heroSlides = [
@@ -197,7 +203,7 @@ export const videos = [
 ];
 
 export const stats = [
-  { value: "+1", label: "Año de trayectoria" },
+  { value: "+3", label: "Año de trayectoria" },
   { value: "8+", label: "Clientes que confían" },
   { value: "100%", label: "Compromiso con la calidad" },
   { value: "24/7", label: "Atención y respuesta" },

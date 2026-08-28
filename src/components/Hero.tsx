@@ -18,7 +18,7 @@ export function Hero() {
             {site.tagline}
           </span>
 
-          <h1 className="mt-6 font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="mt-6 font-display text-4xl font-extrabold leading-[1.2] tracking-normal text-white sm:text-5xl lg:text-6xl">
             Mantenimientos locativos
             <span className="mt-2 block bg-amber-gradient bg-clip-text text-transparent">
               con calidad e ingeniería.
@@ -72,7 +72,7 @@ export function Hero() {
 
           <div className="absolute right-0 top-4 z-10 rotate-0 rounded-md bg-amber-gradient px-3 py-1.5 shadow-lg sm:-right-6 sm:top-6 sm:rotate-3 sm:px-4 sm:py-2">
             <p className="font-display text-[0.65rem] font-extrabold uppercase tracking-wide text-navy-900 sm:text-xs">
-              +1 año de trayectoria
+              +3 año de trayectoria
             </p>
           </div>
         </div>

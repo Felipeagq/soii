@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal } from "./Reveal";
 import { clientes } from "@/lib/site";
 
@@ -23,12 +24,16 @@ export function Clients() {
           <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
             {clientes.map((c) => (
               <li
-                key={c}
+                key={c.name}
                 className="flex items-center justify-center rounded-lg border border-navy-100 bg-white px-4 py-6 text-center shadow-sm transition-all duration-300 hover:border-amber-200 hover:shadow-card"
               >
-                <span className="font-display text-base font-bold tracking-tight text-navy-600 sm:text-lg">
-                  {c}
-                </span>
+                <Image
+                  src={c.logo}
+                  alt={c.name}
+                  width={140}
+                  height={56}
+                  className="h-10 w-auto object-contain sm:h-12"
+                />
               </li>
             ))}
           </ul>
