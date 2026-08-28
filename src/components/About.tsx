@@ -25,7 +25,7 @@ export function About() {
           </div>
           <div className="absolute -bottom-6 right-4 grid grid-cols-2 gap-3 rounded-lg bg-navy-900 p-5 text-white shadow-card sm:right-8">
             <div>
-              <p className="font-display text-2xl font-extrabold text-amber-400">+1</p>
+              <p className="font-display text-2xl font-extrabold text-amber-400">+3</p>
               <p className="text-[0.7rem] uppercase tracking-wide text-white/60">
                 Año en el mercado
               </p>
