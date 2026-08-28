@@ -20,7 +20,7 @@ export function Hero() {
 
           <h1 className="mt-6 font-display text-4xl font-extrabold leading-[1.2] tracking-normal text-white sm:text-5xl lg:text-6xl">
             Mantenimientos locativos
-            <span className="mt-2 block bg-amber-gradient bg-clip-text text-transparent">
+            <span className="mt-2 block bg-amber-gradient bg-clip-text pb-[0.18em] text-transparent [-webkit-background-clip:text]">
               con calidad e ingeniería.
             </span>
           </h1>
